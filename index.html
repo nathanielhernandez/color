@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="randomColor()">
+    <nav>
+        culler
+    </nav>
+    <div class="main">
+        <div class="slider_container">
+            <input type="range" min="0" max="255" id="redSlider" class="slider">
+            <input type="range" min="0" max="255" id="greenSlider" class="slider">
+            <input type="range" min="0" max="255" id="blueSlider" class="slider">
+        </div>
+        <div class="card">
+            <div id="colorBox">
+            </div>
+            <h3>HEX:</h3><h2 id="hexColor"></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
     
 </body>
 </html>
